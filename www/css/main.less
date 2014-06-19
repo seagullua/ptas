@@ -1,7 +1,7 @@
 @import "_bootstrap/bootstrap";
 
-@md-scale: 0.6;
-@sm-scale: 0.6;
+@md-scale: 0.8;
+@sm-scale: 0.7;
 @xs-scale: 0.55;
 
 body {
@@ -75,8 +75,8 @@ body {
   margin-bottom: 80px;
 }
 
-@feature-name-size: 60px;
-@feature-description-size: 30px;
+@feature-name-size: 55px;
+@feature-description-size: 26px;
 .feature-block {
   margin-bottom: 80px;
 
@@ -86,7 +86,6 @@ body {
   li{
     font-size: @feature-description-size;
     list-style-type: none;
-    white-space: nowrap;
   }
   ul{
     padding: 5px;
@@ -112,10 +111,19 @@ body {
   .top_description{
     font-size: @top-description-font*@scale;
   }
+  .feature-block {
+
+    h2{
+      font-size: @feature-name-size*@scale;
+    }
+    li{
+      font-size: @feature-description-size*@scale;
+    }
+  }
 }
 
 @media (max-width: @screen-lg-min) {
-  .scale_style(0.8);
+  .scale_style(0.9);
 }
 
 @media (max-width: @screen-md) {

@@ -56,7 +56,7 @@
         {
             "image": "f1_image.jpg",
             "title": "Сервис",
-            "block_height": "600",
+            "block_height": "500",
             "top_margin": "20",
             "bullets": [
                 "Планирование работы. Пропускная система",
@@ -103,7 +103,7 @@
         {
             "image": "f1_image.jpg",
             "title": "Мотивация работы сотрудников",
-            "block_height": "480",
+            "block_height": "380",
             "top_margin": "10",
             "bullets": [
                 "Гибкий механизм расчета мотивационных вознаграждений",

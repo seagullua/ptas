@@ -5833,12 +5833,11 @@ body {
   margin-bottom: 80px;
 }
 .feature-block h2 {
-  font-size: 60px;
+  font-size: 55px;
 }
 .feature-block li {
-  font-size: 30px;
+  font-size: 26px;
   list-style-type: none;
-  white-space: nowrap;
 }
 .feature-block ul {
   padding: 5px;
@@ -5858,17 +5857,35 @@ body {
 }
 @media (max-width: 1200px) {
   .top_description {
-    font-size: 24px;
+    font-size: 27px;
+  }
+  .feature-block h2 {
+    font-size: 49.5px;
+  }
+  .feature-block li {
+    font-size: 23.4px;
   }
 }
 @media (max-width: 992px) {
   .top_description {
-    font-size: 18px;
+    font-size: 24px;
+  }
+  .feature-block h2 {
+    font-size: 44px;
+  }
+  .feature-block li {
+    font-size: 20.8px;
   }
 }
 @media (max-width: 768px) {
   .top_description {
-    font-size: 18px;
+    font-size: 21px;
+  }
+  .feature-block h2 {
+    font-size: 38.5px;
+  }
+  .feature-block li {
+    font-size: 18.2px;
   }
   .car_logo .space-holder {
     display: none !important;
@@ -5890,6 +5907,12 @@ body {
 @media (max-width: 480px) {
   .top_description {
     font-size: 16.5px;
+  }
+  .feature-block h2 {
+    font-size: 30.25px;
+  }
+  .feature-block li {
+    font-size: 14.3px;
   }
   .navbar-nav a {
     font-size: 14px;
