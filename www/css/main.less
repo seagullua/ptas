@@ -66,6 +66,39 @@
   }
 }
 
+.car-block{
+  margin-bottom: 80px;
+}
+
+@feature-name-size: 60px;
+@feature-description-size: 30px;
+.feature-block {
+  margin-bottom: 80px;
+  height: 548px;
+
+  h2{
+    margin-top: 120px;
+    font-size: @feature-name-size;
+  }
+  li{
+    font-size: @feature-description-size;
+  }
+
+  .feature-img{
+    position: relative;
+    img {
+      position: absolute;
+      top:0px;
+    }
+    &.im-left img{
+      right: 20px;
+    }
+    &.im-right img{
+      left:0px;
+    }
+  }
+
+}
 
 .scale_style(@scale) {
   .top_description{

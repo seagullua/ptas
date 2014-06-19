@@ -5823,6 +5823,33 @@ button.close {
   width: 120%;
   z-index: 0;
 }
+.car-block {
+  margin-bottom: 80px;
+}
+.feature-block {
+  margin-bottom: 80px;
+  height: 548px;
+}
+.feature-block h2 {
+  margin-top: 120px;
+  font-size: 60px;
+}
+.feature-block li {
+  font-size: 30px;
+}
+.feature-block .feature-img {
+  position: relative;
+}
+.feature-block .feature-img img {
+  position: absolute;
+  top: 0px;
+}
+.feature-block .feature-img.im-left img {
+  right: 20px;
+}
+.feature-block .feature-img.im-right img {
+  left: 0px;
+}
 @media (max-width: 1200px) {
   .top_description {
     font-size: 24px;

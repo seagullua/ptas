@@ -1,7 +1,7 @@
 <% include common/header.ejs %>
 <% include common/top_menu.ejs %>
 
-<div class="container">
+<div class="container car-block">
     <div class="row">
         <div class="col-sm-5 top_description">
             <%= content.top_description %>
@@ -12,5 +12,34 @@
         </div>
     </div>
 </div>
+
+<% for(var i=0; i<content.features.length; ++i) {
+    var f = content.features[i];
+    var img_style = "im-left";
+    if(i % 2 == 1) {
+        img_style = "im-right";
+    }
+    var image = '<div class="col-xs-3 feature-img '+img_style+'">' +
+            '<img src="/static/images/features/'+ f.image+'" title="'+f.title+' — '+config.site_name+'" ></div>';
+%>
+    <div class="container feature-block">
+        <div class="row">
+        <% if(i % 2 == 0) { %>
+        <%- image %>
+        <% } %>
+        <div class="col-xs-9 ">
+            <h2><%= f.title %></h2>
+            <ul>
+                <% for (var b=0; b< f.bullets.length; ++b) {%>
+                <li><%= f.bullets[b] %></li>
+                <% } %>
+            </ul>
+        </div>
+        <% if(i % 2 == 1) { %>
+        <%- image %>
+        <% } %>
+        </div>
+    </div>
+<% } %>
 <%= content %>
 <% include common/footer.ejs %>
