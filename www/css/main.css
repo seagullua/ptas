@@ -5773,8 +5773,14 @@ button.close {
   }
 }
 .top-menu {
+  min-width: 320px;
+}
+.top-menu {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.top-menu .container-fluid {
+  padding: 0px;
 }
 .navbar-header h1 {
   position: relative;
@@ -5799,14 +5805,60 @@ button.close {
   font-size: 24px;
 }
 .top_description {
-  font-size: 20px;
+  font-size: 30px;
+  z-index: 100;
+  margin-bottom: 15px;
 }
 .car_logo {
   position: relative;
 }
-.car_logo img {
+.car_logo .space-holder {
+  width: 100%;
+  display: block !important;
+}
+.car_logo .car {
   position: absolute;
   top: 0px;
   right: 0px;
   width: 120%;
+  z-index: 0;
+}
+@media (max-width: 1200px) {
+  .top_description {
+    font-size: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .top_description {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .top_description {
+    font-size: 18px;
+  }
+  .car_logo .space-holder {
+    display: none !important;
+  }
+  .car_logo .car {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+  }
+  .navbar-nav a {
+    font-size: 18px;
+    padding-left: 4px!important;
+    padding-right: 4px!important;
+  }
+  .navbar-header h1 .navbar-brand {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .top_description {
+    font-size: 16.5px;
+  }
+  .navbar-nav a {
+    font-size: 14px;
+  }
 }

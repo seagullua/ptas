@@ -1,7 +1,17 @@
 @import "_bootstrap/bootstrap";
+
+@md-scale: 0.6;
+@sm-scale: 0.6;
+@xs-scale: 0.55;
+.top-menu {
+  min-width: 320px;
+}
 .top-menu{
   margin-top: 10px;
   margin-bottom: 10px;
+  .container-fluid{
+    padding: 0px;
+  }
 }
 .navbar-header{
   @logo-size: 50px;
@@ -33,17 +43,79 @@
   }
 }
 
-@top-description-font: 20px;
+@top-description-font: 30px;
+
+
 .top_description {
   font-size: @top-description-font;
+  z-index: 100;
+  margin-bottom: 15px;
 }
 .car_logo{
   position: relative;
-  img{
+  .space-holder{
+    width:100%;
+    display: block !important;
+  }
+  .car{
     position: absolute;
     top:0px;
     right: 0px;
     width: 120%;
+    z-index: 0;
   }
 }
 
+
+.scale_style(@scale) {
+  .top_description{
+    font-size: @top-description-font*@scale;
+  }
+}
+
+@media (max-width: @screen-lg-min) {
+  .scale_style(0.8);
+}
+
+@media (max-width: @screen-md) {
+  .scale_style(@md-scale);
+}
+
+@media (max-width: @screen-sm) {
+  .scale_style(@sm-scale);
+
+  .car_logo{
+    .space-holder{
+      display: none !important;
+    }
+    .car{
+      position: relative;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+
+  .navbar-nav{
+    a{
+      font-size: 18px;
+      padding-left: 4px!important;
+      padding-right: 4px!important;
+    }
+  }
+  .navbar-header{
+    h1{
+      .navbar-brand{
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-xs) {
+  .scale_style(@xs-scale);
+  .navbar-nav{
+    a{
+      font-size: 14px;
+    }
+  }
+}
