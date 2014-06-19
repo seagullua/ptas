@@ -41,5 +41,26 @@
         </div>
     </div>
 <% } %>
-<%= content %>
+
+
+
+<div class="container info-block">
+    <h1 id="price"><%= content.price.title %></h1>
+    <p><%= content.price.text %></p>
+</div>
+
+<div class="container info-block">
+    <h1 id="contacts"><%= content.contacts.title %></h1>
+    <p><%= content.contacts.text %></p>
+    <div class="alert alert-warning phone"><%= content.contacts.phone %></div>
+</div>
+
+<div class="container info-block">
+    <h1><%= content.clients.title %></h1>
+    <p><%= content.clients.text %></p>
+
+    <img src="/static/images/clients/c1_image.jpg" >
+
+</div>
+
 <% include common/footer.ejs %>

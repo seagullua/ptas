@@ -50,6 +50,10 @@
     //Static
     app.use('/static', express.static(path.join(__dirname, 'www' )));
 
+    app.use(function(req, res){
+        res.redirect('/');
+    });
+
     var server = http.createServer(app);
     server.listen(config.port);
 

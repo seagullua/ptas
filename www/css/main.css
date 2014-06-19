@@ -5855,6 +5855,26 @@ body {
 .feature-block .feature-img.im-right img {
   left: 0px;
 }
+.info-block {
+  margin-bottom: 50px;
+  font-size: 28px;
+  text-align: center;
+}
+.info-block h1 {
+  font-size: 60px;
+  text-align: center;
+}
+.info-block p {
+  text-align: center;
+}
+.info-block img {
+  max-width: 100%;
+}
+.phone {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 60px;
+}
 @media (max-width: 1200px) {
   .top_description {
     font-size: 27px;
@@ -5864,6 +5884,15 @@ body {
   }
   .feature-block li {
     font-size: 23.4px;
+  }
+  .info-block {
+    font-size: 25.2px;
+  }
+  .info-block h1 {
+    font-size: 54px;
+  }
+  .phone {
+    font-size: 54px;
   }
 }
 @media (max-width: 992px) {
@@ -5876,6 +5905,15 @@ body {
   .feature-block li {
     font-size: 20.8px;
   }
+  .info-block {
+    font-size: 22.4px;
+  }
+  .info-block h1 {
+    font-size: 48px;
+  }
+  .phone {
+    font-size: 48px;
+  }
 }
 @media (max-width: 768px) {
   .top_description {
@@ -5886,6 +5924,15 @@ body {
   }
   .feature-block li {
     font-size: 18.2px;
+  }
+  .info-block {
+    font-size: 19.6px;
+  }
+  .info-block h1 {
+    font-size: 42px;
+  }
+  .phone {
+    font-size: 42px;
   }
   .car_logo .space-holder {
     display: none !important;
@@ -5913,6 +5960,15 @@ body {
   }
   .feature-block li {
     font-size: 14.3px;
+  }
+  .info-block {
+    font-size: 15.4px;
+  }
+  .info-block h1 {
+    font-size: 33px;
+  }
+  .phone {
+    font-size: 33px;
   }
   .navbar-nav a {
     font-size: 14px;
