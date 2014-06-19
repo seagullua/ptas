@@ -1,0 +1,49 @@
+@import "_bootstrap/bootstrap";
+.top-menu{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.navbar-header{
+  @logo-size: 50px;
+  h1{
+    position: relative;
+    margin: 0px;
+    padding-left: @logo-size + 10px;
+    font-weight: bold;
+    .navbar-brand{
+      font-size: 34px;
+      text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    }
+  }
+
+  span{
+    left: 0px;
+    top: -2px;
+    position: absolute;
+    width: @logo-size;
+    height: @logo-size;
+    display: block;
+    background: url('../images/logo.jpg');
+  }
+}
+
+.navbar-nav{
+  a{
+    font-size: 24px;
+  }
+}
+
+@top-description-font: 20px;
+.top_description {
+  font-size: @top-description-font;
+}
+.car_logo{
+  position: relative;
+  img{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    width: 120%;
+  }
+}
+

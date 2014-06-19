@@ -1,0 +1,15 @@
+<% include common/header.ejs %>
+<% include common/top_menu.ejs %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 top_description">
+            <%= content.top_description %>
+        </div>
+        <div class="col-sm-8 car_logo">
+            <img src="/static/images/main-image.jpg" class="img-responsive" >
+        </div>
+    </div>
+</div>
+<%= content %>
+<% include common/footer.ejs %>

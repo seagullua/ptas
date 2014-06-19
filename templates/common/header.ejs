@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%
+    //Prepare page title "PAGE_NAME — SITE_NAME"
+    var page_title = '';
+    var social_title = '';
+    var site_name = config.site_name;
+    if(page.title != '')
+    {
+        social_title = page.title;
+        page_title += page.title + ' — ';
+    } else {
+        social_title = site_name;
+    }
+    page_title += site_name;
+    %>
+
+    <!-- Add page title -->
+    <title><%=page_title%></title>
+
+    <!-- Add Meta keywords and description tags -->
+    <% if(page.keywords != '') {%>
+    <meta name="keywords" content="<%=page.keywords %>">
+    <% } %>
+    <% if(page.description != '') {%>
+    <meta name="description" content="<%=page.description %>">
+    <meta itemprop="description" content="<%=page.description %>">
+
+    <% } %>
+
+    <meta itemprop="name" content="<%=social_title %>">
+    <meta property="og:title" content="<%=social_title %>"/>
+    <meta property="og:site_name" content="<%=site_name %>"/>
+
+
+    <link href="/static/css/main.css" rel="stylesheet">
+
+</head>
+<body>
