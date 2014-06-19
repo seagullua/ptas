@@ -4,7 +4,7 @@
 <div class="container car-block">
     <div class="row">
         <div class="col-sm-5 top_description">
-            <%= content.top_description %>
+            <%- content.top_description %>
         </div>
         <div class="col-sm-7 car_logo">
             <img src="/static/images/space-holder.png" class="space-holder" style="display: none;">
@@ -27,7 +27,7 @@
         <% if(i % 2 == 0) { %>
         <%- image %>
         <% } %>
-        <div class="col-xs-9 ">
+        <div class="col-xs-9 info" style="height: <%= f.block_height%>px">
             <h2 style="margin-top: <%= f.top_margin%>px"><%= f.title %></h2>
             <ul>
                 <% for (var b=0; b< f.bullets.length; ++b) {%>
