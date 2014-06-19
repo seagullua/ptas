@@ -1,0 +1,12 @@
+{
+  "name": "PTAS",
+  "description": "Description",
+  "author": "Author name",
+  "dependencies": {
+    	"express":          "*",
+    	"ejs":              "*",
+        "fs-extra":         "*"
+
+  },
+  "engine": "node 0.11.9"
+}
