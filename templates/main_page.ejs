@@ -20,18 +20,18 @@
         img_style = "im-right";
     }
     var image = '<div class="col-xs-3 feature-img '+img_style+'">' +
-            '<img src="/static/images/features/'+ f.image+'" title="'+f.title+' — '+config.site_name+'" ></div>';
+            '<img src="/static/images/features/'+ f.image+'" title="'+f.title+' — '+config.site_name+'" style="height: '+ f.block_height+'px"></div>';
 %>
-    <div class="container feature-block">
+    <div class="container feature-block" style="height: <%= f.block_height%>px">
         <div class="row">
         <% if(i % 2 == 0) { %>
         <%- image %>
         <% } %>
         <div class="col-xs-9 ">
-            <h2><%= f.title %></h2>
+            <h2 style="margin-top: <%= f.top_margin%>px"><%= f.title %></h2>
             <ul>
                 <% for (var b=0; b< f.bullets.length; ++b) {%>
-                <li><%= f.bullets[b] %></li>
+                <li>— <%= f.bullets[b] %></li>
                 <% } %>
             </ul>
         </div>

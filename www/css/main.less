@@ -3,8 +3,13 @@
 @md-scale: 0.6;
 @sm-scale: 0.6;
 @xs-scale: 0.55;
-.top-menu {
-  min-width: 320px;
+
+body {
+  overflow-x:hidden;
+}
+
+.container {
+  min-width: 340px !important;
 }
 .top-menu{
   margin-top: 10px;
@@ -74,14 +79,17 @@
 @feature-description-size: 30px;
 .feature-block {
   margin-bottom: 80px;
-  height: 548px;
 
   h2{
-    margin-top: 120px;
     font-size: @feature-name-size;
   }
   li{
     font-size: @feature-description-size;
+    list-style-type: none;
+    white-space: nowrap;
+  }
+  ul{
+    padding: 5px;
   }
 
   .feature-img{

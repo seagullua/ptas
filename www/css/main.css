@@ -5772,8 +5772,11 @@ button.close {
     display: none !important;
   }
 }
-.top-menu {
-  min-width: 320px;
+body {
+  overflow-x: hidden;
+}
+.container {
+  min-width: 340px !important;
 }
 .top-menu {
   margin-top: 10px;
@@ -5828,14 +5831,17 @@ button.close {
 }
 .feature-block {
   margin-bottom: 80px;
-  height: 548px;
 }
 .feature-block h2 {
-  margin-top: 120px;
   font-size: 60px;
 }
 .feature-block li {
   font-size: 30px;
+  list-style-type: none;
+  white-space: nowrap;
+}
+.feature-block ul {
+  padding: 5px;
 }
 .feature-block .feature-img {
   position: relative;
