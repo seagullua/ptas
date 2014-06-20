@@ -8,59 +8,69 @@
         </div>
         <div class="col-sm-7 car_logo">
             <img src="/static/images/space-holder.png" class="space-holder" style="display: none;">
-            <img src="/static/images/main-image.jpg" class="car" >
+            <img src="/static/images/main-image.jpg" class="car">
         </div>
     </div>
 </div>
 
-<% for(var i=0; i<content.features.length; ++i) {
+<% for(var i = 0; i < content.features.length; ++i) {
     var f = content.features[i];
     var img_style = "im-left";
-    if(i % 2 == 1) {
+    if (i % 2 == 1) {
         img_style = "im-right";
     }
-    var image = '<div class="col-xs-3 feature-img '+img_style+'">' +
-            '<img src="/static/images/features/'+ f.image+'" title="'+f.title+' — '+config.site_name+'" style="height: '+ f.block_height+'px"></div>';
+    var image = '<div class="col-xs-3 feature-img ' + img_style + '">' +
+            '<img src="/static/images/features/' + f.image + '" title="' + f.title + ' — ' + config.site_name + '" style="height: ' + f.block_height + 'px"></div>';
 %>
-    <div class="container feature-block" style="height: <%= f.block_height%>px">
+<div class="feature-container con-<%= img_style %>">
+    <div class="container feature-block" style="min-height: <%= f.block_height %>px">
         <div class="row">
-        <% if(i % 2 == 0) { %>
-        <%- image %>
-        <% } %>
-        <div class="col-xs-9 info" style="height: <%= f.block_height%>px">
-            <h2 style="margin-top: <%= f.top_margin%>px"><%= f.title %></h2>
-            <ul>
-                <% for (var b=0; b< f.bullets.length; ++b) {%>
-                <li>— <%= f.bullets[b] %></li>
-                <% } %>
-            </ul>
-        </div>
-        <% if(i % 2 == 1) { %>
-        <%- image %>
-        <% } %>
+            <% if(i % 2 == 0) { %>
+            <%- image %>
+            <% } %>
+            <div class="col-xs-9 info" style="min-height: <%= f.block_height %>px">
+                <h2 style=""><%= f.title %></h2>
+                <ul>
+                    <% for (var b = 0; b < f.bullets.length; ++b) { %>
+                    <li>— <%= f.bullets[b] %></li>
+                    <% } %>
+                </ul>
+            </div>
+            <% if(i % 2 == 1) { %>
+            <%- image %>
+            <% } %>
         </div>
     </div>
+</div>
 <% } %>
 
 
+<div class="info-container">
+    <div class="container info-block">
+        <h1 id="price"><%= content.price.title %></h1>
 
-<div class="container info-block">
-    <h1 id="price"><%= content.price.title %></h1>
-    <p><%= content.price.text %></p>
+        <p><%= content.price.text %></p>
+    </div>
 </div>
 
-<div class="container info-block">
-    <h1 id="contacts"><%= content.contacts.title %></h1>
-    <p><%= content.contacts.text %></p>
-    <div class="alert alert-warning phone"><%= content.contacts.phone %></div>
+<div class="info-container red">
+    <div class="container info-block">
+        <h1 id="contacts"><%= content.contacts.title %></h1>
+
+        <p><%= content.contacts.text %></p>
+
+        <div class="phone"><%= content.contacts.phone %></div>
+    </div>
 </div>
 
-<div class="container info-block">
-    <h1><%= content.clients.title %></h1>
-    <p><%= content.clients.text %></p>
+<div class="info-container">
+    <div class="container info-block">
+        <h1><%= content.clients.title %></h1>
 
-    <img src="/static/images/clients/c1_image.jpg" >
+        <p><%= content.clients.text %></p>
 
+        <img src="/static/images/clients/c1_image.jpg">
+
+    </div>
 </div>
-
 <% include common/footer.ejs %>

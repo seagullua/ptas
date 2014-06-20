@@ -3,6 +3,7 @@
 @md-scale: 0.8;
 @sm-scale: 0.7;
 @xs-scale: 0.55;
+@red-color: #f14744;
 
 body {
   overflow-x:hidden;
@@ -77,13 +78,23 @@ body {
 
 @feature-name-size: 55px;
 @feature-description-size: 26px;
+.feature-container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &.con-im-left {
+    background-color: #f6f6f6;
+  }
+  margin-bottom: 20px;
+  overflow: hidden;
+}
 .feature-block {
-  margin-bottom: 80px;
+
   .info{
-    background-color: #fae2e1;
+    //background-color: #fae2e1;
   }
   h2{
     font-size: @feature-name-size;
+    color: #f14744;
   }
   li{
     font-size: @feature-description-size;
@@ -111,18 +122,26 @@ body {
 }
 @info-block-title: 60px;
 @info-block-text: 28px;
-.info-block{
+
+.info-container{
+  padding-top:10px;
+  padding-bottom: 30px;
   margin-bottom: 50px;
+
+  &.red{
+    background-color: @red-color;
+    color: #ffffff;
+  }
+}
+
+.info-block{
+
   font-size: @info-block-text;
-  text-align: center;
 
   h1 {
     font-size: @info-block-title;
-    text-align: center;
   }
-  p{
-    text-align: center;
-  }
+
   img {
     max-width: 100%;
   }
@@ -130,9 +149,7 @@ body {
 }
 
 .phone {
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: @info-block-title;
+  font-size: @info-block-title*0.8;
 }
 
 .scale_style(@scale) {
@@ -158,7 +175,7 @@ body {
   }
 
   .phone {
-    font-size: @info-block-title*@scale;
+    font-size: @info-block-title*0.8*@scale;
   }
 }
 

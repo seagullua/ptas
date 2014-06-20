@@ -5829,14 +5829,18 @@ body {
 .car-block {
   margin-bottom: 80px;
 }
-.feature-block {
-  margin-bottom: 80px;
+.feature-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
-.feature-block .info {
-  background-color: #fae2e1;
+.feature-container.con-im-left {
+  background-color: #f6f6f6;
 }
 .feature-block h2 {
   font-size: 55px;
+  color: #f14744;
 }
 .feature-block li {
   font-size: 26px;
@@ -5859,25 +5863,26 @@ body {
 .feature-block .feature-img.im-right img {
   left: 40px;
 }
-.info-block {
+.info-container {
+  padding-top: 10px;
+  padding-bottom: 30px;
   margin-bottom: 50px;
+}
+.info-container.red {
+  background-color: #f14744;
+  color: #ffffff;
+}
+.info-block {
   font-size: 28px;
-  text-align: center;
 }
 .info-block h1 {
   font-size: 60px;
-  text-align: center;
-}
-.info-block p {
-  text-align: center;
 }
 .info-block img {
   max-width: 100%;
 }
 .phone {
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 60px;
+  font-size: 48px;
 }
 @media (max-width: 1200px) {
   .top_description {
@@ -5896,7 +5901,7 @@ body {
     font-size: 54px;
   }
   .phone {
-    font-size: 54px;
+    font-size: 43.2px;
   }
 }
 @media (max-width: 992px) {
@@ -5916,7 +5921,7 @@ body {
     font-size: 48px;
   }
   .phone {
-    font-size: 48px;
+    font-size: 38.4px;
   }
 }
 @media (max-width: 768px) {
@@ -5936,7 +5941,7 @@ body {
     font-size: 42px;
   }
   .phone {
-    font-size: 42px;
+    font-size: 33.6px;
   }
   .car_logo .space-holder {
     display: none !important;
@@ -5972,7 +5977,7 @@ body {
     font-size: 33px;
   }
   .phone {
-    font-size: 33px;
+    font-size: 26.4px;
   }
   .navbar-nav a {
     font-size: 14px;
