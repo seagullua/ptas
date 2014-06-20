@@ -5931,6 +5931,9 @@ body {
     left: 0px;
     top: 1px;
   }
+  .clients img {
+    width: 229px;
+  }
 }
 @media (max-width: 992px) {
   .feature-block h2 {
@@ -5957,6 +5960,9 @@ body {
   .top_description span {
     left: 0px;
     top: -3px;
+  }
+  .clients img {
+    width: 230px;
   }
 }
 @media (max-width: 768px) {
@@ -5989,6 +5995,9 @@ body {
   .top_description p {
     padding-right: 0;
   }
+  .clients img {
+    width: 45%;
+  }
 }
 @media (max-width: 480px) {
   .feature-block h2 {
@@ -6008,5 +6017,8 @@ body {
   }
   .navbar-nav a {
     font-size: 14px;
+  }
+  .clients img {
+    width: 45%;
   }
 }
