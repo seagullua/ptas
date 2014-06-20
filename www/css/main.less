@@ -13,28 +13,40 @@ body {
   min-width: 340px !important;
 }
 .top-menu{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   .container-fluid{
     padding: 0px;
   }
 }
-.navbar-header{
+.top_description{
   @logo-size: 50px;
   h1{
     position: relative;
     margin: 0px;
     padding-left: @logo-size + 10px;
     font-weight: bold;
-    .navbar-brand{
-      font-size: 34px;
+    .brand{
+      font-size: 1.6em;
       text-shadow: rgba(0,0,0,.01) 0 0 1px;
     }
+    white-space: nowrap;
+    a{
+      color: @red-color;
+    }
+    a:hover{
+      text-decoration: inherit;
+    }
+    margin-bottom: 20px;
   }
-
+  p{
+    //padding-top: 1em;
+    padding-right: 30%;
+    //padding-bottom: 1em;
+  }
   span{
     left: 0px;
-    top: -2px;
+    top: 5px;
     position: absolute;
     width: @logo-size;
     height: @logo-size;
@@ -49,12 +61,13 @@ body {
   }
 }
 
-@top-description-font: 30px;
+@top-description-font: 24px;
 
 
 .top_description {
   font-size: @top-description-font;
   z-index: 100;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 .car_logo{
@@ -139,6 +152,12 @@ body {
   font-size: @info-block-text;
 
   h1 {
+    position: relative;
+    .anchor{
+      position: absolute;
+      left:0px;
+      top:-100px;
+    }
     font-size: @info-block-title;
   }
 
@@ -153,9 +172,7 @@ body {
 }
 
 .scale_style(@scale) {
-  .top_description{
-    font-size: @top-description-font*@scale;
-  }
+
   .feature-block {
 
     h2{
@@ -181,10 +198,36 @@ body {
 
 @media (max-width: @screen-lg-min) {
   .scale_style(0.9);
+
+  .top_description{
+    h1{
+      .brand{
+        font-size: 1.5em;
+      }
+    }
+    span{
+      left: 0px;
+      top: 1px;
+    }
+    font-size: @top-description-font*0.9;
+  }
 }
 
 @media (max-width: @screen-md) {
   .scale_style(@md-scale);
+
+  .top_description{
+    h1{
+      .brand{
+        font-size: 1.1em;
+      }
+    }
+    span{
+      left: 0px;
+      top: -3px;
+    }
+    font-size: @top-description-font*0.7;
+  }
 }
 
 @media (max-width: @screen-sm) {
@@ -201,18 +244,13 @@ body {
     }
   }
 
-  .navbar-nav{
-    a{
-      font-size: 18px;
-      padding-left: 4px!important;
-      padding-right: 4px!important;
-    }
-  }
-  .navbar-header{
-    h1{
-      .navbar-brand{
-        font-size: 20px;
-      }
+
+  .top_description{
+    font-size: @top-description-font*0.8;
+    p{
+      //padding-top: 1em;
+      padding-right: 0;
+      //padding-bottom: 1em;
     }
   }
 }

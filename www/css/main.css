@@ -5779,25 +5779,36 @@ body {
   min-width: 340px !important;
 }
 .top-menu {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .top-menu .container-fluid {
   padding: 0px;
 }
-.navbar-header h1 {
+.top_description h1 {
   position: relative;
   margin: 0px;
   padding-left: 60px;
   font-weight: bold;
+  white-space: nowrap;
+  margin-bottom: 20px;
 }
-.navbar-header h1 .navbar-brand {
-  font-size: 34px;
+.top_description h1 .brand {
+  font-size: 1.6em;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
-.navbar-header span {
+.top_description h1 a {
+  color: #f14744;
+}
+.top_description h1 a:hover {
+  text-decoration: inherit;
+}
+.top_description p {
+  padding-right: 30%;
+}
+.top_description span {
   left: 0px;
-  top: -2px;
+  top: 5px;
   position: absolute;
   width: 50px;
   height: 50px;
@@ -5808,8 +5819,9 @@ body {
   font-size: 24px;
 }
 .top_description {
-  font-size: 30px;
+  font-size: 24px;
   z-index: 100;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 .car_logo {
@@ -5876,7 +5888,13 @@ body {
   font-size: 28px;
 }
 .info-block h1 {
+  position: relative;
   font-size: 60px;
+}
+.info-block h1 .anchor {
+  position: absolute;
+  left: 0px;
+  top: -100px;
 }
 .info-block img {
   max-width: 100%;
@@ -5885,9 +5903,6 @@ body {
   font-size: 48px;
 }
 @media (max-width: 1200px) {
-  .top_description {
-    font-size: 27px;
-  }
   .feature-block h2 {
     font-size: 49.5px;
   }
@@ -5903,11 +5918,18 @@ body {
   .phone {
     font-size: 43.2px;
   }
+  .top_description {
+    font-size: 21.6px;
+  }
+  .top_description h1 .brand {
+    font-size: 1.5em;
+  }
+  .top_description span {
+    left: 0px;
+    top: 1px;
+  }
 }
 @media (max-width: 992px) {
-  .top_description {
-    font-size: 24px;
-  }
   .feature-block h2 {
     font-size: 44px;
   }
@@ -5923,11 +5945,18 @@ body {
   .phone {
     font-size: 38.4px;
   }
+  .top_description {
+    font-size: 16.8px;
+  }
+  .top_description h1 .brand {
+    font-size: 1.1em;
+  }
+  .top_description span {
+    left: 0px;
+    top: -3px;
+  }
 }
 @media (max-width: 768px) {
-  .top_description {
-    font-size: 21px;
-  }
   .feature-block h2 {
     font-size: 38.5px;
   }
@@ -5951,19 +5980,14 @@ body {
     width: 100%;
     z-index: 0;
   }
-  .navbar-nav a {
-    font-size: 18px;
-    padding-left: 4px!important;
-    padding-right: 4px!important;
+  .top_description {
+    font-size: 19.2px;
   }
-  .navbar-header h1 .navbar-brand {
-    font-size: 20px;
+  .top_description p {
+    padding-right: 0;
   }
 }
 @media (max-width: 480px) {
-  .top_description {
-    font-size: 16.5px;
-  }
   .feature-block h2 {
     font-size: 30.25px;
   }

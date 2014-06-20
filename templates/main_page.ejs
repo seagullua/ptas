@@ -4,7 +4,8 @@
 <div class="container car-block">
     <div class="row">
         <div class="col-sm-5 top_description">
-            <%- content.top_description %>
+            <h1><a class="brand" href="/"><span class="logo"></span>ПТ АВТО 8.2</a></h1>
+            <p><%- content.top_description %></p>
         </div>
         <div class="col-sm-7 car_logo">
             <img src="/static/images/space-holder.png" class="space-holder" style="display: none;">
@@ -47,7 +48,7 @@
 
 <div class="info-container">
     <div class="container info-block">
-        <h1 id="price"><%= content.price.title %></h1>
+        <h1><span class="anchor" id="price"></span><%= content.price.title %></h1>
 
         <p><%= content.price.text %></p>
     </div>
@@ -55,7 +56,7 @@
 
 <div class="info-container red">
     <div class="container info-block">
-        <h1 id="contacts"><%= content.contacts.title %></h1>
+        <h1><span class="anchor" id="contacts"></span><%= content.contacts.title %></h1>
 
         <p><%= content.contacts.text %></p>
 
