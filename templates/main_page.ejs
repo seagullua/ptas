@@ -70,8 +70,15 @@
 
         <p><%= content.clients.text %></p>
 
-        <img src="/static/images/clients/c1_image.jpg">
-
+        <div id="clients" class="clients">
+            <% for(var j=0; j<content.clients.list.length; ++j) {
+                var cl = content.clients.list[j];
+            %>
+            <img src="/static/images/clients/<%= cl.image %>"
+                 class="img-thumbnail"
+                 title="<%= cl.title %><%= content.clients.suffix %>">
+            <%}%>
+        </div>
     </div>
 </div>
 <% include common/footer.ejs %>

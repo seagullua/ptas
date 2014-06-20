@@ -5902,6 +5902,9 @@ body {
 .phone {
   font-size: 48px;
 }
+.clients img {
+  margin-bottom: 10px;
+}
 @media (max-width: 1200px) {
   .feature-block h2 {
     font-size: 49.5px;
