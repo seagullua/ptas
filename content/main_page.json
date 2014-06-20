@@ -6,7 +6,7 @@
         "title": "Контакты"
     },
     "price": {
-        "text": "ПТ Авто 8.2 лицензируется на каждое предприятие без ограничения рабочих мест. Текущие цены уточняйте по телефону. Для пользователей ПТ Авто 8.2 и для дилеров Porshe скидки.",
+        "text": "ПТ Авто 8.2 лицензируется на каждое предприятие без ограничения рабочих мест. Текущие цены уточняйте по телефону. Для пользователей ПТ Авто 7.7 и для дилеров Porshe скидки.",
         "title": "Приобретение ПТ Авто 8.2"
     },
     "clients": {
@@ -64,7 +64,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f2_image.jpg",
             "title": "Запчасти",
             "block_height": "350",
             "top_margin": "20",
@@ -77,7 +77,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f3_image.jpg",
             "title": "Логистика",
             "block_height": "350",
             "top_margin": "20",
@@ -90,7 +90,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f4_image.jpg",
             "title": "Склад",
             "block_height": "350",
             "top_margin": "20",
@@ -103,7 +103,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f5_image.jpg",
             "title": "Сервис",
             "block_height": "500",
             "top_margin": "20",
@@ -122,7 +122,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f6_image.jpg",
             "title": "Автосалон",
             "block_height": "380",
             "top_margin": "20",
@@ -136,7 +136,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f7_image.jpg",
             "title": "Скидки",
             "block_height": "380",
             "top_margin": "20",
@@ -150,7 +150,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f8_image.jpg",
             "title": "Мотивация работы сотрудников",
             "block_height": "380",
             "top_margin": "10",
@@ -165,7 +165,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f9_image.jpg",
             "title": "Финансовый блок",
             "block_height": "350",
             "top_margin": "20",
@@ -178,7 +178,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f10_image.jpg",
             "title": "Затраты",
             "block_height": "350",
             "top_margin": "20",
@@ -191,7 +191,7 @@
             ]
         },
         {
-            "image": "f1_image.jpg",
+            "image": "f11_image.jpg",
             "title": "Интеграция с внешними системами",
             "block_height": "350",
             "top_margin": "20",
